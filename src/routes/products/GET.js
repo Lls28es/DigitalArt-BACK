@@ -116,8 +116,8 @@ server.get("/:id", (req, res) => {
       return res.status(200).json(resp);
     })
     .catch((error) => {
-      console.error(error.message);
-      res.status(500).send(error)
+      console.log(error);
+      res.send(error)
     });
 });
 
